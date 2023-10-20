@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAST TO MATH</title>
+
+  <!-- Dependencia para usar Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!--Icono de pestaña-->
+  <link rel="shortcut icon" href="/img/logo-m.png">
+
+  <!--CSS -->
+  <link rel="stylesheet" href="/css/estilos1.css">
+  <link rel="stylesheet" href="/css/estilosEx.css">
+  <!-- Importar fuentes de texto -->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+  <!-- CSS SwweetAlert2 -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.5/dist/sweetalert2.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.5/dist/sweetalert2.min.css">
+
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+  integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  </head>
+
+  <body>
+
+  <!-- Cabecera -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <img src="/img/logo.png" width="80px">
+        <a class="navbar-brand ms-2" href="/index.html">
+          <h1>Fast To Math</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse float-end" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item me-4 h4">
+              <a class="nav-link active" aria-current="page" href="/index.html"><i class="fa-solid fa-house"></i> Inicio</a>
+            </li>
+            <li class="nav-item dropdown me-4 h4">
+              <a class="nav-link dropdown-toggle active" href="" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-book"></i> Temario</a>
+              <ul class="dropdown-menu bgdrop" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item mt-2 mb-2 text-center" href="/1-Primer-año/temario1.html"><i class="fa-solid fa-1"></i> Primer grado<br>
+                  </a></li>
+                <li><a class="dropdown-item mt-2 mb-2 text-center" href="/2-Segundo-año/temario2.html"><i class="fa-solid fa-2"></i> Segundo grado<br>
+                  </a></li>
+                <li><a class="dropdown-item mt-2 mb-2 text-center" href="/3-Tercer-año/temario3.html"><i class="fa-solid fa-3"></i> Tercer grado<br>
+                  </a></li>
+                <li><a class="dropdown-item mt-2 mb-2 text-center" href="/4-Cuarto-año/temario4.html"><i class="fa-solid fa-4"></i> Cuarto grado<br>
+                  </a></li>
+                <li><a class="dropdown-item mt-2 mb-2 text-center" href="/5-Quinto-año/temario5.html"><i class="fa-solid fa-5"></i> Quinto grado<br>
+                  </a></li>
+                <li><a class="dropdown-item mt-2 mb-2 text-center" href="/6-Sexto-año/temario6.html"><i class="fa-solid fa-6"></i> Sexto grado<br>
+                  </a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown me-4 h4 ">
+              <a class="nav-link dropdown-toggle active" href="" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-book-open"></i> Exámenes</a>
+                <ul class="dropdown-menu bgdrop" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item mt-2 mb-2 text-center" href="/Examenes/examen-primero.html"><i class="fa-solid fa-1"></i> Primer grado<br>
+                    </a></li>
+                  <li><a class="dropdown-item mt-2 mb-2 text-center" href="/Examenes/examen-segundo.html"><i class="fa-solid fa-2"></i> Segundo grado<br>
+                    </a></li>
+                  <li><a class="dropdown-item mt-2 mb-2 text-center" href="/Examenes/examen-tercero.html"><i class="fa-solid fa-3"></i> Tercer grado<br>
+                    </a></li>
+                  <li><a class="dropdown-item mt-2 mb-2 text-center" href="/Examenes/examen-cuarto.html"><i class="fa-solid fa-4"></i> Cuarto grado<br>
+                    </a></li>
+                  <li><a class="dropdown-item mt-2 mb-2 text-center" href="/Examenes/examen-quinto.html"><i class="fa-solid fa-5"></i> Quinto grado<br>
+                    </a></li>
+                  <li><a class="dropdown-item mt-2 mb-2 text-center" href="/Examenes/examen-sexto.html"><i class="fa-solid fa-6"></i> Sexto grado<br>
+                    </a></li>
+                </ul>
+            </li>
+            <li class="nav-item me-5 h4">
+              <a class="nav-link active" href="/ayuda.html"><i class="fa-solid fa-circle-question"></i> Ayuda</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  
+    <!--Breadcumb-->
+    <div class="bg-white pt-1 px-3">
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/index.html">Inicio</a></li>
+                <li class="breadcrumb-item"><a href="/1-Primer-año/temario1.html">Temario Primer Año</a></li>
+                <li class="breadcrumb-item"><a href="/1-Primer-año/Temas/Tema2.html">Tema 2</a></li>
+                <li class="breadcrumb-item active text-primary" aria-current="page">Examen Tema 2</li>
+            </ol>
+        </nav>
+    </div>
+
+   <!-- Contenedor de las instrucciones-->
+   <div class="container col-9 my-5 card">
+    
+    <h1 class="card-title text-center">Examen de Practica del Tema 2</h1>
+    <p class="h3 text-center">Restas</p>
+    <div class="row row-cols-2">
+      <div class="col-6 col-md-4 text-center align-self-center">
+          <img src="/img/examenes/bola1.png" class="justify-content-center img-fluid rounded mx-auto d-inline">
+      </div>
+      <div class="col-md-5 card-body d-inline">
+        <p class="card-text fs-3 fw-bold">Instrucciones:</p>
+        <p class="card-text fs-5">Lee despacio y selecciona una respuesta para cada pregunta, y al terminar de contestar todas,
+          pulsa el botón de <u>enviar</u> ubicado al final de las preguntas</p>
+      </div>
+    </div>
+   </div>
+
+  <!-- Contenedor del formulario de examen -->
+  <div class="container col-9 card ">
+    <section id="p0">
+      <h3 class="fw-bold">1.- 4 - ? = 1</h3><br>
+      <input type="radio" value="1" name="p1" onclick="respuesta(0,this)">
+      <label class="radioB">2</label><br>
+      <input type="radio" value="2" name="p1" onclick="respuesta(0,this)">
+      <label class="radioB">3</label><br>
+      <input type="radio" value="3" name="p1" onclick="respuesta(0,this)">
+      <label class="radioB">1</label>
+    </section>
+    <hr>
+    <section id="p1">
+      <h3 class="fw-bold">2.- ? + ? = 5</h3><br>
+      <input type="radio" value="1" name="p2" onclick="respuesta(1,this)">
+      <label class="radioB">9 - 4</label><br>
+      <input type="radio" value="2" name="p2" onclick="respuesta(1,this)">
+      <label class="radioB">8 - 2</label><br>
+      <input type="radio" value="3" name="p2" onclick="respuesta(1,this)">
+      <label class="radioB">7 - 6</label>
+    </section>
+    <hr>
+    <section id="p2">
+      <h3 class="fw-bold">3.- 6 - 6 = ?</h3><br>
+      <input type="radio" value="1" name="p3" onclick="respuesta(2,this)">
+      <label class="radioB">0</label><br>
+      <input type="radio" value="2" name="p3" onclick="respuesta(2,this)">
+      <label class="radioB">2</label><br>
+      <input type="radio" value="3" name="p3" onclick="respuesta(2,this)">
+      <label class="radioB">1</label>
+    </section>
+    <hr>
+    <section id="p3">
+      <h3 class="fw-bold">4.- ? - 4 = 3</h3><br>
+      <input type="radio" value="1" name="p4" onclick="respuesta(3,this)">
+      <label class="radioB">7</label><br>
+      <input type="radio" value="2" name="p4" onclick="respuesta(3,this)">
+      <label class="radioB">8</label><br>
+      <input type="radio" value="3" name="p4" onclick="respuesta(3,this)">
+      <label class="radioB">5</label>
+    </section>
+    <hr>
+    <section id="p4">
+      <h3 class="fw-bold">5.- ? - ? = 6</h3><br>
+      <input type="radio" value="1" name="p5" onclick="respuesta(4,this)">
+      <label class="radioB">9 - 1</label><br>
+      <input type="radio" value="2" name="p5" onclick="respuesta(4,this)">
+      <label class="radioB">8 - 4</label><br>
+      <input type="radio" value="3" name="p5" onclick="respuesta(4,this)">
+      <label class="radioB">10 - 4</label>
+    </section>
+    <hr>
+    
+    <!--Boton con funcion-->
+    <div class="d-grid gap-2 col-4 mx-auto">
+      <button class="btn btn-success boton" type="submit" onclick="corregir()">Enviar</button>
+      <a class="btn btn-warning" href="../Temas/Tema2.html" role="button">Ver Temas</a>
+      <a class="btn btn-danger" href="/index.html" role="button">Cancelar</a>
+    </div>
+  </div>
+
+  <!--Footer-->
+  <footer class="bg-light">
+    <div class="container-md d-flex justify-content-center">
+      <div class="row">
+        <div class="col-6 d-flex align-items-center">
+          <span class="text-muted">
+            Facultad de ingeniería mecánica y eléctrica.<br>
+            Interacción Humano-Computadora 
+          </span>
+        </div>
+        <div class="col-6 text-muted mt-3">
+          <span>Integrantes del equipo:</span>
+          <table class="responsive">
+            <tr>
+              <td class="p-1"><li>Karely Valdés</li></td>
+              <td class="p-1"><li>Ulises Cerda</li></td>
+              <td class="p-1"><li>Eduardo Del Angel</li></td>
+            </tr>
+            <tr>
+              <td class="p-1"><li>Ian Salazar</li></td>
+              <td class="p-1"><li>Johan Gloria</li></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    //arreglo de respuestas correctas
+    let correctas = [2, 1, 1, 1, 3];
+    let opcion_elegida = [0, 0, 0, 0, 0];
+    let cant_correctas = 0;
+
+    //funcion que toma el num de pregunta y el input elegido
+    function respuesta(num_pregunta, seleccionada) {
+      //guardar respuesta elegida
+      opcion_elegida[num_pregunta] = seleccionada.value;
+    }
+
+    //funcion que comprara arreglos para saber cantidad correctas
+    function corregir() {
+      cant_correctas = 0;
+
+      //ciclo para detectar respuestas vacias
+      for (i = 0; i < opcion_elegida.length; i++) {
+        if (opcion_elegida[i] == 0) {
+
+          Swal.fire({
+            icon: 'warning',
+            title: 'Oops...',
+            text: 'Parece que te falta contestar alguna pregunta',
+          })
+          return;
+        }
+      }
+
+      //ciclo para detectar respuestas correctas
+      for (i = 0; i < correctas.length; i++) {
+        if (correctas[i] == opcion_elegida[i]) {
+          cant_correctas++;
+        }
+      }
+      Swal.fire(
+        '¡Terminaste!',
+        'Tu resultado es ' + cant_correctas + ' de 5',
+        'success'
+      )
+
+    }
+
+  </script>
+
+</body>
+
+</html>

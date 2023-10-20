@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAST TO MATH</title>
+
+  <!-- Dependencia para usar Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!--Icono de pestaña-->
+  <link rel="shortcut icon" href="/img/logo-m.png">
+
+  <!--CSS -->
+  <link rel="stylesheet" href="/css/estilos1.css">
+  <link rel="stylesheet" href="/css/estilosTemas.css">
+  <!-- Importar fuentes de texto -->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+  integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+ </head>
+
+ <body>
+
+ <!-- Cabecera -->
+ <header>
+   <nav class="navbar navbar-expand-lg navbar-light">
+     <div class="container-fluid">
+       <img src="/img/logo.png" width="80px">
+       <a class="navbar-brand ms-2" href="/index.html">
+         <h1>Fast To Math</h1>
+       </a>
+       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="collapse navbar-collapse float-end" id="navbarSupportedContent">
+         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+           <li class="nav-item me-4 h4">
+             <a class="nav-link active" aria-current="page" href="/index.html"><i class="fa-solid fa-house"></i> Inicio</a>
+           </li>
+           <li class="nav-item dropdown me-4 h4">
+             <a class="nav-link dropdown-toggle active" href="" id="navbarDropdown" role="button"
+               data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-book"></i> Temario</a>
+             <ul class="dropdown-menu bgdrop" aria-labelledby="navbarDropdown">
+               <li><a class="dropdown-item mt-2 mb-2 text-center" href="/1-Primer-año/temario1.html"><i class="fa-solid fa-1"></i> Primer grado<br>
+                 </a></li>
+               <li><a class="dropdown-item mt-2 mb-2 text-center" href="/2-Segundo-año/temario2.html"><i class="fa-solid fa-2"></i> Segundo grado<br>
+                 </a></li>
+               <li><a class="dropdown-item mt-2 mb-2 text-center" href="/3-Tercer-año/temario3.html"><i class="fa-solid fa-3"></i> Tercer grado<br>
+                 </a></li>
+               <li><a class="dropdown-item mt-2 mb-2 text-center" href="/4-Cuarto-año/temario4.html"><i class="fa-solid fa-4"></i> Cuarto grado<br>
+                 </a></li>
+               <li><a class="dropdown-item mt-2 mb-2 text-center" href="/5-Quinto-año/temario5.html"><i class="fa-solid fa-5"></i> Quinto grado<br>
+                 </a></li>
+               <li><a class="dropdown-item mt-2 mb-2 text-center" href="/6-Sexto-año/temario6.html"><i class="fa-solid fa-6"></i> Sexto grado<br>
+                 </a></li>
+             </ul>
+           </li>
+           <li class="nav-item dropdown me-4 h4 ">
+            <a class="nav-link dropdown-toggle active" href="" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-book-open"></i> Exámenes</a>
+              <ul class="dropdown-menu bgdrop" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item mt-2 mb-2 text-center" href="/Examenes/examen-primero.html"><i class="fa-solid fa-1"></i> Primer grado<br>
+                  </a></li>
+                <li><a class="dropdown-item mt-2 mb-2 text-center" href="/Examenes/examen-segundo.html"><i class="fa-solid fa-2"></i> Segundo grado<br>
+                  </a></li>
+                <li><a class="dropdown-item mt-2 mb-2 text-center" href="/Examenes/examen-tercero.html"><i class="fa-solid fa-3"></i> Tercer grado<br>
+                  </a></li>
+                <li><a class="dropdown-item mt-2 mb-2 text-center" href="/Examenes/examen-cuarto.html"><i class="fa-solid fa-4"></i> Cuarto grado<br>
+                  </a></li>
+                <li><a class="dropdown-item mt-2 mb-2 text-center" href="/Examenes/examen-quinto.html"><i class="fa-solid fa-5"></i> Quinto grado<br>
+                  </a></li>
+                <li><a class="dropdown-item mt-2 mb-2 text-center" href="/Examenes/examen-sexto.html"><i class="fa-solid fa-6"></i> Sexto grado<br>
+                  </a></li>
+              </ul>
+          </li>
+           <li class="nav-item me-5 h4">
+             <a class="nav-link active" href="/ayuda.html"><i class="fa-solid fa-circle-question"></i> Ayuda</a>
+           </li>
+         </ul>
+       </div>
+     </div>
+   </nav>
+ </header>
+
+   <!--Breadcumb-->
+   <div class="bg-white pt-1 px-3">
+    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/index.html">Inicio</a></li>
+        <li class="breadcrumb-item active text-primary" aria-current="page">Temario Segundo Año</li>
+        </ol>
+    </nav>
+</div>
+
+   <!-- Seccion de temas -->
+   <div class="container card w-90">
+    <div class="row justify-content-between">
+      <div class="col-12 col-lg-8 col-md-6 col-sm-12 align-self-center">
+        <h1 class="display-5">Temario de Segundo Año</h1>
+        <p class="card-text fs-4">Selecciona el tema que quieres repasar dando clic encima de la foto que corresponde</p>
+      </div>
+      <div class="col-12 col-lg-4 col-md-6 col-sm-12 text-center">
+          <img src="/img/temario2/pato.jpg" class="rounded-end personaje" alt="personaje">
+      </div>
+    </div>
+   </div>
+  </div>
+  
+  <section class="temario5" id="temario5">
+    <div class="container cont-top">
+      <div class="row row-cols-2 g-3">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card cmove">
+            <a href="Temas/Tema1.html">
+              <img src="/img/temario2/sumas.jpg" class="card-img-top">
+              <div class="card-body">
+                <h4 class="card-title">Sumas de dos o más dígitos</h4>
+                <p class="card-text">Aprende a sumar números que tienen dos o más digitos con ejercicios sencillos</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card cmove">
+            <a href="Temas/Tema2.html">
+              <img src="/img/temario2/restas.jpg" class="card-img-top">
+              <div class="card-body">
+                <h4 class="card-title">Restas de dos o más dígitos</h4>
+                <p class="card-text">Aprende a restar números que tienen dos o más digitos con ejercicios sencillos</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card cmove">
+            <a href="Temas/Tema3.html">
+              <img src="/img/temario2/multiplicacion.jpg" class="card-img-top">
+              <div class="card-body">
+                <h4 class="card-title">Tablas de multiplicar</h4>
+                <p class="card-text">Aprende a multiplicar números</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container card w-90 p-0">
+    <a href="/Examenes/examen-segundo.html">
+      <img src="/img/examenes/banner.png" class="rounded-end" alt="pato" width="100%">
+    </a>
+  </div>
+
+  <!--Footer-->
+  <footer class="bg-light">
+    <div class="container-md d-flex justify-content-center">
+      <div class="row">
+        <div class="col-6 d-flex align-items-center">
+          <span class="text-muted">
+            Facultad de ingeniería mecánica y eléctrica.<br>
+            Interacción Humano-Computadora 
+          </span>
+        </div>
+        <div class="col-6 text-muted mt-3">
+          <span>Integrantes del equipo:</span>
+          <table class="responsive">
+            <tr>
+              <td class="p-1"><li>Karely Valdés</li></td>
+              <td class="p-1"><li>Ulises Cerda</li></td>
+              <td class="p-1"><li>Eduardo Del Angel</li></td>
+            </tr>
+            <tr>
+              <td class="p-1"><li>Ian Salazar</li></td>
+              <td class="p-1"><li>Johan Gloria</li></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
