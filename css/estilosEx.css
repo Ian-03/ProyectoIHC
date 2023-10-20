@@ -1,0 +1,32 @@
+input[type="radio"] {
+    -ms-transform: scale(1.8); /* IE 9 */
+    -webkit-transform: scale(1.8); /* Chrome, Safari, Opera */
+    transform: scale(1.8);
+  }
+section{
+margin-bottom: 20px;
+
+}
+
+label{
+    font-size: 1.2rem;
+    padding-left: .5vw;
+}
+
+
+.exam{
+    margin-top: 5%;
+    max-width: 200px;
+}
+.radioB{
+    font-size: 30px;
+    margin: 2px;
+}
+
+hr.type_3 {
+    border: 0;
+    height: 25px;
+    background-image: url(/img/examenes/pacman.png);
+    background-repeat: no-repeat;
+   
+    }

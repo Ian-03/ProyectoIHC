@@ -1,0 +1,20 @@
+.iconos{
+    float: top;
+    height: 50px;
+    object-fit: cover;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 0px;
+}
+.texto{
+    text-align: justify;
+}
+.matematicas{
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    background:url(../img/matematicas.jpg) no-repeat;
+    background-size: cover;
+    background-position: center; 
+}

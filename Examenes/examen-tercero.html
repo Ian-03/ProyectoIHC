@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAST TO MATH</title>
+
+  <!-- Dependencia para usar Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!--Icono de pestaña-->
+  <link rel="shortcut icon" href="/img/logo-m.png">
+
+  <!--CSS -->
+  <link rel="stylesheet" href="/css/estilos1.css">
+  <link rel="stylesheet" href="/css/estilosEx.css">
+  <!-- Importar fuentes de texto -->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+  <!-- CSS SwweetAlert2 -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.5/dist/sweetalert2.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.5/dist/sweetalert2.min.css">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+ </head>
+
+ <body>
+
+ <!-- Cabecera -->
+ <header>
+   <nav class="navbar navbar-expand-lg navbar-light">
+     <div class="container-fluid">
+       <img src="/img/logo.png" width="80px">
+       <a class="navbar-brand ms-2" href="/index.html">
+         <h1>Fast To Math</h1>
+       </a>
+       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="collapse navbar-collapse float-end" id="navbarSupportedContent">
+         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+           <li class="nav-item me-4 h4">
+             <a class="nav-link active" aria-current="page" href="/index.html"><i class="fa-solid fa-house"></i> Inicio</a>
+           </li>
+           <li class="nav-item dropdown me-4 h4">
+             <a class="nav-link dropdown-toggle active" href="" id="navbarDropdown" role="button"
+               data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-book"></i> Temario</a>
+             <ul class="dropdown-menu bgdrop" aria-labelledby="navbarDropdown">
+               <li><a class="dropdown-item mt-2 mb-2 text-center" href="/1-Primer-año/temario1.html"><i class="fa-solid fa-1"></i> Primer grado<br>
+                 </a></li>
+               <li><a class="dropdown-item mt-2 mb-2 text-center" href="/2-Segundo-año/temario2.html"><i class="fa-solid fa-2"></i> Segundo grado<br>
+                 </a></li>
+               <li><a class="dropdown-item mt-2 mb-2 text-center" href="/3-Tercer-año/temario3.html"><i class="fa-solid fa-3"></i> Tercer grado<br>
+                 </a></li>
+               <li><a class="dropdown-item mt-2 mb-2 text-center" href="/4-Cuarto-año/temario4.html"><i class="fa-solid fa-4"></i> Cuarto grado<br>
+                 </a></li>
+               <li><a class="dropdown-item mt-2 mb-2 text-center" href="/5-Quinto-año/temario5.html"><i class="fa-solid fa-5"></i> Quinto grado<br>
+                 </a></li>
+               <li><a class="dropdown-item mt-2 mb-2 text-center" href="/6-Sexto-año/temario6.html"><i class="fa-solid fa-6"></i> Sexto grado<br>
+                 </a></li>
+             </ul>
+           </li>
+           <li class="nav-item dropdown me-4 h4 ">
+             <a class="nav-link dropdown-toggle active" href="" id="navbarDropdown" role="button"
+               data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-book-open"></i> Exámenes</a>
+               <ul class="dropdown-menu bgdrop" aria-labelledby="navbarDropdown">
+                 <li><a class="dropdown-item mt-2 mb-2 text-center" href="/Examenes/examen-primero.html"><i class="fa-solid fa-1"></i> Primer grado<br>
+                   </a></li>
+                 <li><a class="dropdown-item mt-2 mb-2 text-center" href="/Examenes/examen-segundo.html"><i class="fa-solid fa-2"></i> Segundo grado<br>
+                   </a></li>
+                 <li><a class="dropdown-item mt-2 mb-2 text-center" href="/Examenes/examen-tercero.html"><i class="fa-solid fa-3"></i> Tercer grado<br>
+                   </a></li>
+                 <li><a class="dropdown-item mt-2 mb-2 text-center" href="/Examenes/examen-cuarto.html"><i class="fa-solid fa-4"></i> Cuarto grado<br>
+                   </a></li>
+                 <li><a class="dropdown-item mt-2 mb-2 text-center" href="/Examenes/examen-quinto.html"><i class="fa-solid fa-5"></i> Quinto grado<br>
+                   </a></li>
+                 <li><a class="dropdown-item mt-2 mb-2 text-center" href="/Examenes/examen-sexto.html"><i class="fa-solid fa-6"></i> Sexto grado<br>
+                   </a></li>
+               </ul>
+           </li>
+           <li class="nav-item me-5 h4">
+             <a class="nav-link active" href="/ayuda.html"><i class="fa-solid fa-circle-question"></i> Ayuda</a>
+           </li>
+         </ul>
+       </div>
+     </div>
+   </nav>
+ </header>
+  
+  <!-- Contenedor de las instrucciones-->
+  <div class="container col-9 my-5 card">
+    
+      <h1 class="card-title text-center">Exámen Tercer grado</h1>
+      <div class="row row-cols-2">
+        <div class="col-6 col-md-4 text-center align-self-center">
+            <img src="/img/examenes/bola1.png" class="justify-content-center img-fluid rounded mx-auto d-inline">
+        </div>
+        <div class="col-md-5 card-body d-inline">
+          <p class="card-text fs-3 fw-bold">Instrucciones:</p>
+          <p class="card-text fs-5">Lee despacio y selecciona una respuesta para cada pregunta, y al terminar de contestar todas,
+            pulsa el botón de <u>enviar</u> ubicado al final de las preguntas</p>
+        </div>
+      </div>
+  
+  </div>
+
+  <!-- Contenedor del formulario de examen -->
+  <div class="container col-9 card">
+    <section id="p0">
+      <h3 class="fw-bold">1.- ¿Cuál es el valor posicional del numero subrayado? -> <u>2</u>45</h3>
+      <input type="radio" value="1" name="p1" onclick="respuesta(0,this)">
+      <label class="radioB">2 unidades</label><br>
+      <input type="radio" value="2" name="p1" onclick="respuesta(0,this)">
+      <label class="radioB">2 decenas</label><br>
+      <input type="radio" value="3" name="p1" onclick="respuesta(0,this)">
+      <label class="radioB">2 centenas</label>
+    </section>
+    <hr class="type_3">
+    <section id="p1">
+      <h3 class="fw-bold">2.- ¿Qué unidad de medición se usaría para medir un lápiz?</h3>
+      <input type="radio" value="1" name="p2" onclick="respuesta(1,this)">
+      <label class="radioB">Centímetros</label><br>
+      <input type="radio" value="2" name="p2" onclick="respuesta(1,this)">
+      <label class="radioB">Metros</label><br>
+      <input type="radio" value="2" name="p2" onclick="respuesta(1,this)">
+      <label class="radioB">Kilómetros</label>
+    </section>
+    <hr class="type_3">
+    <section id="p2">
+        <h3 class="fw-bold">3.- 120 centimetros es mayor que 1 metro y 30 centimetros</h3><br>
+        <input type="radio" class="radio" value="1" name="p3" onclick="respuesta(2,this)">
+        <label class="radioB">Verdadero</label><br>
+        <input type="radio" class="radio" value="2" name="p3" onclick="respuesta(2,this)">
+        <label class="radioB">Falso</label><br>
+    </section>
+    <hr class="type_3">
+    <section id="p3">
+      <h3 class="fw-bold">4.- ¿Si un granjero recolecta manzanas y logra llenar 3 sacos con 15 manzanas, cuántas tiene en total?</h3>
+      <img src="/3-Tercer-año/Temas/img/manzanas.png" alt="manzanas" class="imagen3"><br>
+      <input type="radio" value="1" name="p4" onclick="respuesta(3,this)">
+      <label class="radioB">45</label><br>
+      <input type="radio" value="2" name="p4" onclick="respuesta(3,this)">
+      <label class="radioB">50</label><br>
+      <input type="radio" value="3" name="p4" onclick="respuesta(3,this)">
+      <label class="radioB">55</label>
+    </section>
+    <hr class="type_3">
+    <section id="p4">
+        <h3 class="fw-bold">5.- ¿Una regla es una herramienta de medición que nos permite medir objetos pequeños?</h3><br>
+        <input type="radio" class="radio" value="1" name="p5" onclick="respuesta(4,this)">
+        <label class="radioB">Verdadero</label><br>
+        <input type="radio" class="radio" value="2" name="p5" onclick="respuesta(4,this)">
+        <label class="radioB">Falso</label><br>
+    </section>
+    <hr class="type_3">
+    <section id="p5">
+      <h3 class="fw-bold">6.- ¿Qué figura tiene 3 aristas?</h3>
+      <input type="radio" value="1" name="p6" onclick="respuesta(5,this)">
+      <label class="radioB"><img src="/3-Tercer-año/Temas/img/cuadrado.png" alt="cuadrado" class="imagen3"></label><br>
+      <input type="radio" value="2" name="p6" onclick="respuesta(5,this)">
+      <label class="radioB"><img src="/3-Tercer-año/Temas/img/triangulo.png" alt="rectangulo" class="imagen3"></label><br>
+      <input type="radio" value="3" name="p6" onclick="respuesta(5,this)">
+      <label class="radioB"><img src="/3-Tercer-año/Temas/img/circulo.png" alt="circulo" class="imagen3"></label>
+    </section>
+    <hr class="type_3">
+    <section id="p6">
+      <h3 class="fw-bold">7.- ¿Qué unidad de medición es la más grande de las siguientes?</h3>
+      <input type="radio" value="1" name="p7" onclick="respuesta(6,this)">
+      <label class="radioB">Kilómetros</label><br>
+      <input type="radio" value="2" name="p7" onclick="respuesta(6,this)">
+      <label class="radioB">Metros</label><br>
+      <input type="radio" value="3" name="p7" onclick="respuesta(6,this)">
+      <label class="radioB">Centímetros</label>
+    </section>
+    <hr class="type_3">
+    <section id="p7">
+        <h3 class="fw-bold">8.- 14 x 18</h3><br>
+        <input type="radio" class="radio" value="1" name="p8" onclick="respuesta(7,this)">
+        <label class="radioB">250</label><br>
+        <input type="radio" class="radio" value="2" name="p8" onclick="respuesta(7,this)">
+        <label class="radioB">262</label><br>
+        <input type="radio" class="radio" value="3" name="p8" onclick="respuesta(7,this)">
+        <label class="radioB">252</label><br>
+    </section>
+    <hr class="type_3">
+    <section id="p8">
+      <h3 class="fw-bold">9.- ¿Qué numero le correspone la posición posicional de centena en 731?</h3>
+      <input type="radio" value="1" name="p9" onclick="respuesta(8,this)">
+      <label class="radioB">7</label><br>
+      <input type="radio" value="2" name="p9" onclick="respuesta(8,this)">
+      <label class="radioB">3</label><br>
+      <input type="radio" value="3" name="p9" onclick="respuesta(8,this)">
+      <label class="radioB">1</label>
+    </section>
+    <hr class="type_3">
+    <section id="p9">
+      <h3 class="fw-bold">10.- ¿Cuál de las siguietes figuras no tiene aristas ni vertices?</h3>
+      <input type="radio" value="1" name="p10" onclick="respuesta(9,this)">
+      <label class="radioB">Cuadrado</label><br>
+      <input type="radio" value="2" name="p10" onclick="respuesta(9,this)">
+      <label class="radioB">Circulo</label><br>
+      <input type="radio" value="3" name="p10" onclick="respuesta(9,this)">
+      <label class="radioB">Triangulo</label>
+    </section>
+    <hr class="type_3">
+    <section id="p10">
+        <h3 class="fw-bold">11.- ¿Cuál de las dos herramientas siguientes se usan para la medición de distancias?</h3><br>
+        <input type="radio" class="radio" value="1" name="p11" onclick="respuesta(10,this)">
+        <label class="radioB"><img src="/3-Tercer-año/Temas/img/cintam.jpg" alt="cinta" class="imagen3"></label><br>
+        <input type="radio" class="radio" value="2" name="p11" onclick="respuesta(10,this)">
+        <label class="radioB"><img src="/3-Tercer-año/Temas/img/bascula.jpg" alt="bascula" class="imagen3"></label><br>
+    </section>
+    <hr class="type_3">
+    <section id="p11">
+      <h3 class="fw-bold">12.- ¿1 metro y 30 centímetros es mayor que 130 centímetros?</h3>
+      <input type="radio" value="1" name="p12" onclick="respuesta(11,this)">
+      <label class="radioB">Verdadero</label><br>
+      <input type="radio" value="2" name="p12" onclick="respuesta(11,this)">
+      <label class="radioB">Falso</label><br>
+      <input type="radio" value="3" name="p12" onclick="respuesta(11,this)">
+      <label class="radioB">Son iguales</label>
+    </section>
+    <hr class="type_3">
+    <section id="p12">
+      <h3 class="fw-bold">13.- 25 x 23</h3>
+      <input type="radio" value="1" name="p13" onclick="respuesta(12,this)">
+      <label class="radioB">570</label><br>
+      <input type="radio" value="2" name="p13" onclick="respuesta(12,this)">
+      <label class="radioB">575</label><br>
+      <input type="radio" value="3" name="p13" onclick="respuesta(12,this)">
+      <label class="radioB">585</label>
+    </section>
+    <hr class="type_3">
+    <section id="p13">
+      <h3 class="fw-bold">14.- ¿Cuántos centímetros hay en 1 kilómetos?</h3>
+      <input type="radio" value="1" name="p14" onclick="respuesta(13,this)">
+      <label class="radioB">1000 metros</label><br>
+      <input type="radio" value="2" name="p14" onclick="respuesta(13,this)">
+      <label class="radioB">100 metros</label><br>
+      <input type="radio" value="3" name="p14" onclick="respuesta(13,this)">
+      <label class="radioB">10 metros</label>
+    </section>
+    <hr class="type_3">
+    <section id="p14">
+      <h3 class="fw-bold">15.- ¿Cual es el valor posicional de la posición más a la izquierda de un numero? </h3>
+      <input type="radio" value="1" name="p15" onclick="respuesta(14,this)">
+      <label class="radioB">Millar</label><br>
+      <input type="radio" value="2" name="p15" onclick="respuesta(14,this)">
+      <label class="radioB">Unidad</label><br>
+      <input type="radio" value="3" name="p15" onclick="respuesta(14,this)">
+      <label class="radioB">Decena</label>
+    </section>
+    <hr class="type_3">
+    <section id="p15">
+      <h3 class="fw-bold">16.- ¿Si vendedor paga 50 pesos de renta por dia, cuando paga después de 30 días?</h3>
+      <input type="radio" value="1" name="p16" onclick="respuesta(15,this)">
+      <label class="radioB">$1500</label><br>
+      <input type="radio" value="2" name="p16" onclick="respuesta(15,this)">
+      <label class="radioB">$1600</label><br>
+      <input type="radio" value="3" name="p16" onclick="respuesta(15,this)">
+      <label class="radioB">$1550</label>
+    </section>
+    <hr class="type_3">
+    <section id="p16">
+      <h3 class="fw-bold">17.- ¿Cuál de las siguientes figuras tiene 5 aristas y 5 lados iguales?</h3>
+      <img src="/3-Tercer-año/Temas/img/figuraas.png" alt="figuras" class="imagen3"><br>
+      <input type="radio" value="1" name="p17" onclick="respuesta(16,this)">
+      <label class="radioB">Pentágono</label><br>
+      <input type="radio" value="2" name="p17" onclick="respuesta(16,this)">
+      <label class="radioB">Hexágono</label><br>
+      <input type="radio" value="3" name="p17" onclick="respuesta(16,this)">
+      <label class="radioB">Cuadrado</label>
+    </section>
+    <hr class="type_3">
+    <section id="p17">
+      <h3 class="fw-bold">18.- 34 x 28</h3>
+      <input type="radio" value="1" name="p18" onclick="respuesta(17,this)">
+      <label class="radioB">942</label><br>
+      <input type="radio" value="2" name="p18" onclick="respuesta(17,this)">
+      <label class="radioB">962</label><br>
+      <input type="radio" value="3" name="p18" onclick="respuesta(17,this)">
+      <label class="radioB">952</label>
+    </section>
+    <hr class="type_3">
+    <section id="p18">
+      <h3 class="fw-bold">19.- ¿Cuál es el valor posicional del numero subrayado? -> <u>6</u>817></h3>
+      <input type="radio" value="1" name="p19" onclick="respuesta(18,this)">
+      <label class="radioB">6 Decenas</label><br>
+      <input type="radio" value="2" name="p19" onclick="respuesta(18,this)">
+      <label class="radioB">6 Centenas</label><br>
+      <input type="radio" value="3" name="p19" onclick="respuesta(18,this)">
+      <label class="radioB">6 Millares</label>
+    </section>
+    <hr class="type_3">
+    <section id="p19">
+      <h3 class="fw-bold">20.- ¿5 metros son mayores que 560 centímetros?</h3>
+      <input type="radio" value="1" name="p20" onclick="respuesta(19,this)">
+      <label class="radioB">Verdadero</label><br>
+      <input type="radio" value="2" name="p20" onclick="respuesta(19,this)">
+        <label class="radioB">Falso</label><br>
+      <input type="radio" value="3" name="p20" onclick="respuesta(19,this)">
+      <label class="radioB">Son iguales</label>
+    </section>
+    <hr class="type_3">
+    <!--Boton con funcion-->
+    <div class="d-grid gap-2 col-4 mx-auto">
+        <button class="btn btn-success boton" type="submit" onclick="corregir()">Enviar</button>
+        <a class="btn btn-warning" href="/3-Tercer-año/temario3.html" role="button">Ver Temas</a>
+        <a class="btn btn-danger" href="/index.html" role="button">Cancelar</a>
+      </div>
+
+  </div>
+
+<!--Footer-->
+<footer class="bg-light">
+  <div class="container-md d-flex justify-content-center">
+    <div class="row">
+      <div class="col-6 d-flex align-items-center">
+        <span class="text-muted">
+          Facultad de ingeniería mecánica y eléctrica.<br>
+          Interacción Humano-Computadora 
+        </span>
+      </div>
+      <div class="col-6 text-muted mt-3">
+        <span>Integrantes del equipo:</span>
+        <table class="responsive">
+          <tr>
+            <td class="p-1"><li>Karely Valdés</li></td>
+            <td class="p-1"><li>Ulises Cerda</li></td>
+            <td class="p-1"><li>Eduardo Del Angel</li></td>
+          </tr>
+          <tr>
+            <td class="p-1"><li>Ian Salazar</li></td>
+            <td class="p-1"><li>Johan Gloria</li></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <script>
+    //arreglo de respuestas correctas
+    let correctas = [3, 1, 2, 1, 1, 2, 1, 3, 1, 2, 1, 3, 2, 1, 2, 1, 1, 3, 3, 2];
+    let opcion_elegida = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+    let cant_correctas = 0;
+
+    //funcion que toma el num de pregunta y el input elegido
+    function respuesta(num_pregunta, seleccionada) {
+      //guardar respuesta elegida
+      opcion_elegida[num_pregunta] = seleccionada.value;
+    }
+
+    //funcion que comprara arreglos para saber cantidad correctas
+    function corregir() {
+      cant_correctas = 0;
+
+      //ciclo para detectar respuestas vacias
+      for (i = 0; i < opcion_elegida.length; i++) {
+        if (opcion_elegida[i] == 0) {
+
+          Swal.fire({
+            icon: 'warning',
+            title: 'Oops...',
+            text: 'Parece que te falta contestar alguna pregunta',
+          })
+          return;
+        }
+      }
+
+      //ciclo para detectar respuestas correctas
+      for (i = 0; i < correctas.length; i++) {
+        if (correctas[i] == opcion_elegida[i]) {
+          cant_correctas++;
+        }
+      }
+      Swal.fire(
+        '¡Terminaste!',
+        'Tu resultado es ' + cant_correctas + ' de 20',
+        'success'
+      )
+
+    }
+
+  </script>
+
+</body>
+
+</html>

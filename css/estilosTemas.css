@@ -1,0 +1,38 @@
+
+.cmove:hover{
+    transform: scale(1.1);
+    z-index:2;
+}
+
+.imagen{
+    width:100%;
+}
+
+.imagen2{
+    width:60%;
+}
+
+.imagen3{
+    width:150%;
+}
+
+.radio{
+    width: 25px;
+    height: 25px;
+}
+
+.video-responsivo{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%;
+}
+.video-responsivo iframe{
+    position:absolute;
+    top:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
