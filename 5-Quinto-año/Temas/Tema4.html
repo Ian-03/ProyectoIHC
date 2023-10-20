@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAST TO MATH</title>
+
+  <!-- Dependencia para usar Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!--Icono de pestaña-->
+  <link rel="shortcut icon" href="/img/logo-m.png">
+
+  <!--CSS -->
+  <link rel="stylesheet" href="/css/estilos1.css">
+  <link rel="stylesheet" href="/css/estilosTemas.css">
+  <!-- Importar fuentes de texto -->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+  <!-- CSS SwweetAlert2 -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.5/dist/sweetalert2.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.5/dist/sweetalert2.min.css">
+
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+  integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+  <!-- Cabecera -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <img src="/img/logo.png" width="80px">
+        <a class="navbar-brand ms-2" href="/index.html">
+          <h1>Fast To Math</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse float-end" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item me-4 h4">
+              <a class="nav-link active" aria-current="page" href="/index.html"><i class="fa-solid fa-house"></i> Inicio</a>
+            </li>
+            <li class="nav-item dropdown me-4 h4">
+              <a class="nav-link dropdown-toggle active" href="" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-book"></i> Temario</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item mt-2 mb-2 text-center" href="/1-Primer-año/temario1.html"><i class="fa-solid fa-1"></i> Primer año<br>
+                  </a></li>
+                <li><a class="dropdown-item mt-2 mb-2 text-center" href="/2-Segundo-año/temario2.html"><i class="fa-solid fa-2"></i> Segundo año<br>
+                  </a></li>
+                <li><a class="dropdown-item mt-2 mb-2 text-center" href="/3-Tercer-año/temario3.html"><i class="fa-solid fa-3"></i> Tercer año<br>
+                  </a></li>
+                <li><a class="dropdown-item mt-2 mb-2 text-center" href="/4-Cuarto-año/temario4.html"><i class="fa-solid fa-4"></i> Cuarto año<br>
+                  </a></li>
+                <li><a class="dropdown-item mt-2 mb-2 text-center" href="/5-Quinto-año/temario5.html"><i class="fa-solid fa-5"></i> Quinto año<br>
+                  </a></li>
+                <li><a class="dropdown-item mt-2 mb-2 text-center" href="/6-Sexto-año/temario6.html"><i class="fa-solid fa-6"></i> Sexto año<br>
+                  </a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown me-4 h4 ">
+              <a class="nav-link dropdown-toggle active" href="" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-book-open"></i> Exámenes</a>
+                <ul class="dropdown-menu bgdrop" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item mt-2 mb-2 text-center" href="/Examenes/examen-primero.html"><i class="fa-solid fa-1"></i> Primer grado<br>
+                    </a></li>
+                  <li><a class="dropdown-item mt-2 mb-2 text-center" href="/Examenes/examen-segundo.html"><i class="fa-solid fa-2"></i> Segundo grado<br>
+                    </a></li>
+                  <li><a class="dropdown-item mt-2 mb-2 text-center" href="/Examenes/examen-tercero.html"><i class="fa-solid fa-3"></i> Tercer grado<br>
+                    </a></li>
+                  <li><a class="dropdown-item mt-2 mb-2 text-center" href="/Examenes/examen-cuarto.html"><i class="fa-solid fa-4"></i> Cuarto grado<br>
+                    </a></li>
+                  <li><a class="dropdown-item mt-2 mb-2 text-center" href="/Examenes/examen-quinto.html"><i class="fa-solid fa-5"></i> Quinto grado<br>
+                    </a></li>
+                  <li><a class="dropdown-item mt-2 mb-2 text-center" href="/Examenes/examen-sexto.html"><i class="fa-solid fa-6"></i> Sexto grado<br>
+                    </a></li>
+                </ul>
+            </li>
+            <li class="nav-item me-5 h4">
+              <a class="nav-link active" href="/ayuda.html"><i class="fa-solid fa-circle-question"></i> Ayuda</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!--Breadcumb-->
+    <div class="bg-white pt-1 px-3">
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/index.html">Inicio</a></li>
+            <li class="breadcrumb-item"><a href="/5-Quinto-año/temario5.html">Temario Quinto Año</a></li>
+            <li class="breadcrumb-item active text-primary" aria-current="page">Tema 4</li>
+            </ol>
+        </nav>
+    </div>
+
+   <!-- Seccion de temas -->
+   <div class="container card w-90">
+    <div class="row justify-content-between">
+      <div class="col-12 align-self-center g-3">
+        <!--Nombre de Tema-->
+        <h1 class="display-5">Tema 4: Porcentajes</h1>
+        <p class="card-text fs-4">A continuación se te mostrarán ejemplos de aplicaciones del uso de porcentajes
+            y ganancias donde se representan como precios o descuentos.
+        </p>
+    </div>
+    </div>
+   </div>
+   
+    <!--Explicacion de Tema-->
+   <div class="container card w-90">
+      <div class="row">
+        <div class="col-12">
+          <div class="h2 text-center">Estrategía para calcular un pocentaje</div>
+          <div class="h3 text-center">Regla de 3</div>
+          <div class="card-text fs-4 p-3">
+            Existe un método que ayuda mucho a sacar el porcentaje de un total, la regla de 3 consiste en ordenar los 
+            datos colocando arriba el total que se tiene y a lado de este un 100%, debajo del 100% se coloca el porcentaje
+            que se esta buscando y abajo del total el resultado del porcentaje buscado.
+          </div>
+          <div class="text-center m-2">
+            <img src="img/regla3.JPG" alt="regla3" class="imagen2">
+          </div>
+          <div class="card-text fs-4 p-3">
+            Si se quiere sacar el numero que representa ese porcentaje primero debemos multiplicar el porcentaje por 
+            el numero de arriba y el resultado de esta multiplicación dividirlo entre 100.
+          </div><hr>
+          <div class="card-text fs-4 p-3">
+            Si se quiere sacar el porcentaje del numero dado hay que multiplicar este numero por 100 y dividir el resultado
+            entre el numero maximo (el que representa el 100%).
+          </div>
+          <div class="text-center m-2">
+            <img src="img/regla3-1.JPG" alt="regla3" class="imagen2">
+          </div>
+        </div>
+        
+      </div>
+   </div>
+   <div class="container card w-90">
+    <!--Ejemplo(s)-->
+        <div class="row ">
+            <div class="col-12 col-lg-9 col-md-8 col-sm-12 align-self-center">
+                <h3><strong>Ejemplo</strong></h3>
+                <p class="card-text fs-4 mb-2">
+                  Por cada $100 de venta, el dueño de una tienda obtiene una ganancia de $25. Si el total de ventas en una hora
+                  fue de $25 000, ¿de cuánto fue la ganancia para el dueño?
+                </p>
+            </div>
+            <div class="col-12 col-lg-3 col-md-4 col-sm-12 text-center align-self-center">
+                <img src="img/autoservicio.JPG" alt="autoservicio" class="imagen float-center">
+            </div>
+            <hr>
+        <p class="card-text fs-4">Hay que separar primero los datos que estamos buscando, nos dice el problema que se obtienen 
+            $25 cada $100 entonces haremos una igualación ya que cada vez que hayan $100 habran $25 extras, es decir que se van a 
+            estar sumando.
+            <br> Y después la segunda cantidad es de la que buscamos la ganancia, por lo que esta se igualara a la cantidad que buscamos. 
+        </p>
+        <div class="col-12 text-center m-2">
+          <img src="img/ganancia1.JPG" alt="ejemplo" class="imagen2">
+        </div>
+        <p class="card-text fs-4">
+           Analizando lo que hay que hacer primero se debe hacer una división entre la cantidad más grande que es 25,000 y la cantidad que 
+        nos da el problema que nos dará ganancia, que es 100.
+        <br>Luego este resultado lo vamos a multiplicar por la ganancia que se obtendrá, que es 25. Y el resultado nos dará $6,250 de ganancia
+        </p>
+        <div class="col-12 text-center m-2">
+          <img src="img/ganancia.JPG" alt="ejemplo" class="imagen2">
+       </div>
+      </div>
+   </div> 
+
+   <!--Video explicando-->
+   <div class="container card w-90">
+    <div class="row justify-content-between g-3">
+      <div class="col-2"></div>
+      <div class="col-8 align-self-center text-center">
+            <p class="card-text fs-4">
+                A continuación se te mostrará un video explicando el tema
+            </p>
+            <div class="video-responsivo">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/_Wnv1t9ca3I" title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="col-2"></div>
+    </div>
+   </div>
+
+   <!--Prueba-->
+   <div class="container card w-700">
+    <div class="row justify-content-between g-3">
+        <div class="col-12">
+            <div class="display-5">Ejercicio de Prueba</div>
+            <p class="card-text fs-4">
+                Ahora te toca a ti, haz la prueba y veremos si has comprendido bien el tema. <br>
+                Selecciona la opción correcta, puedes apoyarte con una libreta y lápiz
+            </p>
+            <section id="p0">
+                <h3>En una tienda de autoservicio por cada $100 de compra te regalan $8 en dinero electrónico.
+                    ¿Cuánto regalarán en dinero electrónico por una compra de $1500?
+                </h3>
+                <div class="display-5">
+                    <input type="radio" class="radio" value="1" name="p1" onclick="respuesta(0,this)">
+                    <label class="radioB">$120</label><br>
+                    <input type="radio" class="radio" value="2" name="p1" onclick="respuesta(0,this)">
+                    <label class="radioB">$80</label><br>
+                    <input type="radio" class="radio" value="3" name="p1" onclick="respuesta(0,this)">
+                    <label class="radioB">$150</label>
+                </div>
+            </section>
+            <div class="d-grid gap-2 col-4 mx-auto">
+                <button class="btn btn-success boton" type="submit" onclick="prueba()">Ver resultado</button>
+            </div>
+            
+        </div>
+    </div>
+   </div>
+
+    <!--Footer-->
+    <footer class="bg-light ">
+      <div class="my-0 py-3 ">
+        <div class="d-grid gap-2 d-md-flex justify-content-md-evenly">
+          <a class="btn btn-outline-primary me-md-2" type="button" href="Tema3.html"><i class="fa-solid fa-arrow-left"></i> Anterior</a>
+          <a class="btn btn-outline-primary me-md-2" type="button" href="/index.html"><i class="fa-solid fa-house"></i> Inicio</a>
+          <a class="btn btn-outline-primary me-md-2" type="button" href="../temario5.html"><i class="fa-solid fa-arrow-right"></i> Siguiente</a>
+          <a class="btn btn-outline-primary me-md-2 arriba" type="button"><i class="fa-solid fa-arrow-up"></i> Arriba</a>
+        </div>
+      </div>
+    </footer>
+
+     <!-- Libreria JQuery -->
+     <script src="https://code.jquery.com/jquery-3.6.0.js"   
+     integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="     
+     crossorigin="anonymous"></script>
+     <script>
+             $(document).ready(function(){
+             $('.arriba').click(function(){
+               $('body,html').animate({
+                 scrollTop:0
+               },200)
+             });
+             $(window).scroll(function () {
+               if ($(this).scrollTop() &gt, 200) {
+                 $('.goup').fadeIn();
+               }
+               else {
+                 $('.goup').fadeOut();
+               }
+             });
+           });
+     </script>
+   
+  <!--SCRIPT-->
+   <script>
+    //funcion que da la respuesta correcta
+    let opcion_elegida=0;
+
+    function respuesta(num_pregunta, seleccionada) {
+      //guardar respuesta elegida
+      opcion_elegida= seleccionada.value;
+    }
+
+    function prueba() {
+     
+        if (opcion_elegida == 0) {
+          Swal.fire({
+            icon: 'warning',
+            title: 'Oops...',
+            text: 'Parece que no has respondido esta pregunta',
+          })
+          return;
+        }  
+
+      //Se da el resultado
+      if (opcion_elegida == 1) {
+      Swal.fire(
+        '¡Bien hecho!',
+        'Tu respuesta es correcta',
+        'success'
+      )
+      }else{
+        Swal.fire(
+        '¡Intenta de nuevo!',
+        'Tu respuesta es incorrecta',
+        'error'
+      )
+      }
+
+    }
+
+  </script>
+</body>
+
+</html>

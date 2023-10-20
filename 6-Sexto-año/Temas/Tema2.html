@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAST TO MATH</title>
+
+  <!-- Dependencia para usar Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!--Icono de pestaña-->
+  <link rel="shortcut icon" href="/img/logo-m.png">
+
+  <!--CSS -->
+  <link rel="stylesheet" href="/css/estilos1.css">
+  <link rel="stylesheet" href="/css/estilosTemas.css">
+  <!-- Importar fuentes de texto -->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+  <!-- CSS SwweetAlert2 -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.5/dist/sweetalert2.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.5/dist/sweetalert2.min.css">
+
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+  integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+ </head>
+
+ <body>
+
+ <!-- Cabecera -->
+ <header>
+   <nav class="navbar navbar-expand-lg navbar-light">
+     <div class="container-fluid">
+       <img src="/img/logo.png" width="80px">
+       <a class="navbar-brand ms-2" href="/index.html">
+         <h1>Fast To Math</h1>
+       </a>
+       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="collapse navbar-collapse float-end" id="navbarSupportedContent">
+         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+           <li class="nav-item me-4 h4">
+             <a class="nav-link active" aria-current="page" href="/index.html"><i class="fa-solid fa-house"></i> Inicio</a>
+           </li>
+           <li class="nav-item dropdown me-4 h4">
+             <a class="nav-link dropdown-toggle active" href="" id="navbarDropdown" role="button"
+               data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-book"></i> Temario</a>
+             <ul class="dropdown-menu bgdrop" aria-labelledby="navbarDropdown">
+               <li><a class="dropdown-item mt-2 mb-2 text-center" href="/1-Primer-año/temario1.html"><i class="fa-solid fa-1"></i> Primer grado<br>
+                 </a></li>
+               <li><a class="dropdown-item mt-2 mb-2 text-center" href="/2-Segundo-año/temario2.html"><i class="fa-solid fa-2"></i> Segundo grado<br>
+                 </a></li>
+               <li><a class="dropdown-item mt-2 mb-2 text-center" href="/3-Tercer-año/temario3.html"><i class="fa-solid fa-3"></i> Tercer grado<br>
+                 </a></li>
+               <li><a class="dropdown-item mt-2 mb-2 text-center" href="/4-Cuarto-año/temario4.html"><i class="fa-solid fa-4"></i> Cuarto grado<br>
+                 </a></li>
+               <li><a class="dropdown-item mt-2 mb-2 text-center" href="/5-Quinto-año/temario5.html"><i class="fa-solid fa-5"></i> Quinto grado<br>
+                 </a></li>
+               <li><a class="dropdown-item mt-2 mb-2 text-center" href="/6-Sexto-año/temario6.html"><i class="fa-solid fa-6"></i> Sexto grado<br>
+                 </a></li>
+             </ul>
+           </li>
+           <li class="nav-item dropdown me-4 h4 ">
+            <a class="nav-link dropdown-toggle active" href="" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-book-open"></i> Exámenes</a>
+              <ul class="dropdown-menu bgdrop" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item mt-2 mb-2 text-center" href="/Examenes/examen-primero.html"><i class="fa-solid fa-1"></i> Primer grado<br>
+                  </a></li>
+                <li><a class="dropdown-item mt-2 mb-2 text-center" href="/Examenes/examen-segundo.html"><i class="fa-solid fa-2"></i> Segundo grado<br>
+                  </a></li>
+                <li><a class="dropdown-item mt-2 mb-2 text-center" href="/Examenes/examen-tercero.html"><i class="fa-solid fa-3"></i> Tercer grado<br>
+                  </a></li>
+                <li><a class="dropdown-item mt-2 mb-2 text-center" href="/Examenes/examen-cuarto.html"><i class="fa-solid fa-4"></i> Cuarto grado<br>
+                  </a></li>
+                <li><a class="dropdown-item mt-2 mb-2 text-center" href="/Examenes/examen-quinto.html"><i class="fa-solid fa-5"></i> Quinto grado<br>
+                  </a></li>
+                <li><a class="dropdown-item mt-2 mb-2 text-center" href="/Examenes/examen-sexto.html"><i class="fa-solid fa-6"></i> Sexto grado<br>
+                  </a></li>
+              </ul>
+          </li>
+           <li class="nav-item me-5 h4">
+             <a class="nav-link active" href="/ayuda.html"><i class="fa-solid fa-circle-question"></i> Ayuda</a>
+           </li>
+         </ul>
+       </div>
+     </div>
+   </nav>
+ </header>
+
+  <!--Breadcumb-->
+    <div class="bg-white pt-1 px-3">
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/index.html">Inicio</a></li>
+            <li class="breadcrumb-item"><a href="/6-Sexto-año/temario6.html">Temario Sexto Año</a></li>
+            <li class="breadcrumb-item active text-primary" aria-current="page">Tema 2</li>
+            </ol>
+        </nav>
+    </div>
+
+   <!-- Seccion de temas -->
+   <div class="container card w-90">
+    <div class="row justify-content-between">
+      <div class="col-12 align-self-center g-3">
+        <!--Nombre de Tema-->
+        <h1 class="display-5">Tema 2: Números negativos</h1>
+        <p class="card-text fs-4">A continuación se te mostrará una explicación breve del tema
+          seguida de un ejemplo para un mayor entendimiento del tema de los números negativos.
+        </p>
+    </div>
+    </div>
+   </div>
+   
+  <!--Explicacion de Tema-->
+  <div class="container card w-90">
+    <div class="col-12 text-center m-2">
+      <img src="img/negativos.jpg" alt="ejemplo" class="">
+    </div>
+    <p class="card-text fs-4">
+      <strong>¿Qué es un número negativo?<br></strong>
+      Los números negativos son todos aquellos números que se expresan con el signo menos (-) a la izquierda y su valor es menor que cero (0). <br>
+    </p>
+    <p class="card-text fs-4">
+      <strong>¿Dónde se utilizan los números negativos?</strong><br>
+      Estos nos sirven para representar las temperaturas, los pisos inferiores de los edificios y las diferentes profundidades del nivel del mar. <br>
+      <br><strong>Representación de números negativos en la recta numérica</strong><br>
+      Los números negativos se representan en la recta numérica de la siguiente manera: <br>
+    </p>
+    <div class="col-12 text-center m-2">
+      <img src="img/RectaNumerica.jpg" alt="ejemplo" class="">
+    </div>
+    <p class="card-text fs-4">
+      Como puedes ver, los números negativos están todos a la izquierda del 0.
+      Cuanto más a la izquierda está, menor o más pequeño será el número negativo.
+    </p>
+
+    <!--Ejemplo(s)-->
+        <div class="row ">
+            <div>
+              <h3><strong><br>Ejemplo de una operación con números negativos:</strong></h3>
+            </div>
+            <div class="col-12 text-center m-2">
+              <img src="img/ejemplonegativo.jpg" alt="ejemplo" class="">
+            </div>
+        </div>
+   </div> 
+
+   <!--Video explicando-->
+   <div class="container card w-90">
+    <div class="row justify-content-between g-3">
+      <div class="col-2"></div>
+      <div class="col-8 align-self-center text-center">
+            <p class="card-text fs-4">
+                A continuación se te mostrará un video explicando el tema
+            </p>
+            <div class="video-responsivo">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/3rXs7H-AIvQ" 
+                title="YouTube video player" frameborder="0" width="560" height="315"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="col-2"></div>
+    </div>
+   </div>
+
+   </div>
+   <!--Prueba-->
+   <div class="container card w-90">
+    <div class="row justify-content-between g-3">
+        <div class="col-12">
+            <div class="display-5">Ejercicio de Prueba</div>
+            <p class="card-text fs-4">
+                Ahora te toca a ti, haz la prueba y veremos si has comprendido bien el tema. <br>
+                Selecciona la opción correcta, puedes apoyarte con una libreta y lápiz
+            </p>
+            <section id="p0">
+                <p class="card-text fs-4">
+                  ¿Cuál es el resultado de la operación? <br>
+                  <strong>-45 + 22 = ?</strong>
+                </p>
+                <div class="card-text fs-4">
+                    <input type="radio" class="radio" value="1" name="p1" onclick="respuesta(0,this)">
+                    <label class="radioB">-33</label><br>
+                    <input type="radio" class="radio" value="2" name="p1" onclick="respuesta(0,this)">
+                    <label class="radioB">23</label><br>
+                    <input type="radio" class="radio" value="3" name="p1" onclick="respuesta(0,this)">
+                    <label class="radioB">-23</label>
+                </div>
+            </section>
+            <div class="d-grid gap-2 col-4 mx-auto">
+                <button class="btn btn-success boton" type="submit" onclick="prueba()">Ver resultado</button>
+            </div>
+            
+        </div>
+    </div>
+  </div>
+
+  <!--Ir a examen-->
+  <div class="container card w-90">
+    <h4 class="display-5">¿Quieres un reto?</h4>
+    <p class="h4">Contesta el examen de práctica de este tema y preparate para retos más dificiles</p>
+    <p class="h4">No olvides seguir practicando y sigue esforzándote cuando no entiendas un tema</p>
+    <div class="d-grid gap-3 col-6 mx-auto mt-2">
+      <a class="btn btn-primary" href="/6-Sexto-año/Examenes/Ex-Tema2.html">Ir al examen de prueba</a>
+    </div>
+  </div>
+
+    <!--Footer-->
+    <footer class="bg-light ">
+      <div class="my-0 py-3 ">
+        <div class="d-grid gap-2 d-md-flex justify-content-md-evenly">
+          <a class="btn btn-outline-primary me-md-2" type="button" href="Tema1.html"><i class="fa-solid fa-arrow-left"></i> Anterior</a>
+          <a class="btn btn-outline-primary me-md-2" type="button" href="/index.html"><i class="fa-solid fa-house"></i> Inicio</a>
+          <a class="btn btn-outline-primary me-md-2" type="button" href="Tema3.html"><i class="fa-solid fa-arrow-right"></i> Siguiente</a>
+          <a class="btn btn-outline-primary me-md-2 arriba" type="button"><i class="fa-solid fa-arrow-up"></i> Arriba</a>
+        </div>
+      </div>
+    </footer>
+
+     <!-- Libreria JQuery -->
+     <script src="https://code.jquery.com/jquery-3.6.0.js"   
+     integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="     
+     crossorigin="anonymous"></script>
+     <script>
+             $(document).ready(function(){
+             $('.arriba').click(function(){
+               $('body,html').animate({
+                 scrollTop:0
+               },200)
+             });
+             $(window).scroll(function () {
+               if ($(this).scrollTop() &gt, 200) {
+                 $('.goup').fadeIn();
+               }
+               else {
+                 $('.goup').fadeOut();
+               }
+             });
+           });
+     </script>
+
+  <!--SCRIPT-->
+   <script>
+    //funcion que da la respuesta correcta
+    let opcion_elegida=0;
+
+    function respuesta(num_pregunta, seleccionada) {
+      //guardar respuesta elegida
+      opcion_elegida= seleccionada.value;
+    }
+
+    function prueba() {
+     
+        if (opcion_elegida == 0) {
+          Swal.fire({
+            icon: 'warning',
+            title: 'Oops...',
+            text: 'Parece que no has respondido esta pregunta',
+          })
+          return;
+        }  
+
+      //Se da el resultado
+      if (opcion_elegida == 3) {
+      Swal.fire(
+        '¡Bien hecho!',
+        'Tu respuesta es correcta',
+        'success'
+      )
+      }else{
+        Swal.fire(
+        '¡Intenta de nuevo!',
+        'Tu respuesta es incorrecta',
+        'error'
+      )
+      }
+
+    }
+
+  </script>
+</body>
+
+</html>
